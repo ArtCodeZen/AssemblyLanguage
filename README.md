@@ -19,7 +19,7 @@
 * Acessar o PID
   > $cat /proc/PID_NUMBER/maps
 
-![image](https://github.com/user-attachments/assets/891326fc-1d19-4443-be87-efb110b7a1f1)
+![image](https://github.com/user-attachments/assets/3fb9bdc0-2799-4bf1-9c44-b8ed9bda3670)
 
 
 
