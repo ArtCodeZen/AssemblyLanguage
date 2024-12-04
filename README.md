@@ -21,6 +21,13 @@
 
 ![image](https://github.com/user-attachments/assets/3fb9bdc0-2799-4bf1-9c44-b8ed9bda3670)
 
+## Usando o strace para ver as chamadas do sistema
+* usando um arquivo compilado do c++
+* Usar o seguinte comando
+    > $strace -c ./hello
+
+![image](https://github.com/user-attachments/assets/90ad3264-540f-4c0c-96c8-0b0059d7e622)
+
 
 
 
