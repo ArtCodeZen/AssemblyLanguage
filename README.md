@@ -29,6 +29,11 @@
 ![image](https://github.com/user-attachments/assets/90ad3264-540f-4c0c-96c8-0b0059d7e622)
 
 
+* Usar o strace modo completo
+  > $strace ./hello
+  
+  > O modo completo exibe todas as informações de execução do programa
+
 
 
 
