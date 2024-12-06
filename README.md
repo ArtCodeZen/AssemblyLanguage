@@ -60,3 +60,10 @@ mov ebx, eax       ; Move o conteúdo de eax para ebx
 
 * Navegar no diretório nano /usr/include/asm/unistd.h
 * * Se existir o diretório com o arquivo unistd.h está correto a adição da biblioteca!
+
+# COMANDO PARA COMPILAR O ASSEMBLY .s
+* GNU assembler 
+  > $ as nomedoarquivo.s -o nomedoarquivo.o
+* GNU linker
+  > $ ld nomedoaqruivo.o -o nomedoarquivo
+
