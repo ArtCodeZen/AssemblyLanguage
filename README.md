@@ -35,5 +35,28 @@
   > O modo completo exibe todas as informações de execução do programa
 
 
+# Assembly tipo GNU x NASM
+  * GAS (GNU Assembler) - AT&T Syntax: Em GAS, os comentários começam com #.
+
+  * Exemplo de GAS:
+```asm
+
+movl %eax, %ebx    # Move o conteúdo de %eax para %ebx
+```
+* NASM (Intel Syntax): Em NASM, os comentários começam com ;.
+
+* Exemplo de NASM:
+```asm
+mov ebx, eax       ; Move o conteúdo de eax para ebx
+```
 
 
+# Adicionar o suporte 32 bits ao Linux Ubuntu
+
+* Instalar as seguintes bibliotecas
+  > sudo apt update
+  > sudo apt install binutils gcc-multilib 
+  > sudo apt install libc6:i386
+
+* Navegar no diretório nano /usr/include/asm/unistd.h
+* * Se existir o diretório com o arquivo unistd.h está correto a adição da biblioteca!
