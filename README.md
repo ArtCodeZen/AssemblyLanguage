@@ -65,5 +65,32 @@ mov ebx, eax       ; Move o conteúdo de eax para ebx
 * GNU assembler 
   > $ as nomedoarquivo.s -o nomedoarquivo.o
 * GNU linker
-  > $ ld nomedoaqruivo.o -o nomedoarquivo
+  > $ ld nomedoaquivo.o -o nomedoarquivo
 
+# COMANDO PARA COMPILAR O ASSEMBLY usando GCC
+* Alterar a estrutura do assembly para o c enxergar
+  * trocar o _start por main
+   
+* 
+```asm
+.section .data
+    msg: 
+            .ascii "Hello World\n"
+.section .text
+.globl main
+main: 
+        movl $4, %eax           #syscall number for write syscall
+        movl $1, %ebx           #file descriptor for write syscall
+        movl $msg, %ecx         #moving buffer pointer to write syscall
+        movl $13, %edx          #moving the buffer size in bytes
+        int $0x80               #interrupt
+
+        movl $1, %eax           #1 is syscal number for exit syscall
+        movl $0, %ebx           #argument for exit syscall
+        int $0x80
+
+  ```
+* gcc com comando para 32 bits
+  > $ gcc -m32 nomedoarquivo.s -o nomedoarquivo
+* Executar arquivo compilado
+  > $ ./nomedoaquivo
